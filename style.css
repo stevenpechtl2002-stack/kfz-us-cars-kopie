@@ -190,9 +190,10 @@ nav.scrolled .hamburger span { background:var(--text); }
   .footer-top { grid-template-columns:1fr 1fr; gap:2.5rem; }
 }
 @media(max-width:900px){
-  nav,nav.scrolled,nav.solid { padding-left:1.5rem; padding-right:1.5rem; }
+  nav,nav.scrolled,nav.solid { padding:.75rem 1.2rem; }
   .nav-links,.nav-right { display:none !important; }
   .hamburger { display:flex !important; flex-direction:column; }
+  .logo-img { display:none !important; }
 
   section { padding:4rem 1.5rem; }
   footer { padding:3rem 1.5rem 2rem; }
@@ -214,13 +215,14 @@ nav.scrolled .hamburger span { background:var(--text); }
   .container img[style] { width:100% !important; max-height:320px; object-fit:cover; }
 }
 @media(max-width:480px){
-  section { padding:3rem 1.2rem; }
-  footer { padding:2.5rem 1.2rem 1.5rem; }
-  .page-hero { padding:5rem 1.2rem 2.5rem; }
-  .cta-banner { padding:2.5rem 1.2rem; }
+  section { padding:3rem 1rem; }
+  footer { padding:2.5rem 1rem 1.5rem; }
+  .page-hero { padding:5rem 1rem 2.5rem; }
+  .cta-banner { padding:2.5rem 1rem; }
   .page-hero h1 { font-size:clamp(2rem,8vw,3.2rem) !important; }
   .cta-btns { flex-direction:column; }
-  .cta-btns a { text-align:center; }
+  .cta-btns a { text-align:center; width:100%; box-sizing:border-box; }
+  .btn-red, .btn-outline, .btn-white, .btn-outline-white { padding:.8rem 1.5rem; font-size:.68rem; }
 }
 
 /* ── SCROLL REVEAL ── */
